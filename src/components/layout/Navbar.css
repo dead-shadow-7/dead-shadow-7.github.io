@@ -1,0 +1,104 @@
+:root {
+  --nav-text-color: #000000; /* Light mode */
+}
+[data-theme="dark"] {
+  --nav-text-color: #e5e7eb; /* Lighter gray for dark mode */
+}
+
+.navbar {
+  position: sticky;
+  top: 16px;
+  z-index: 100;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+
+  background: var(--navbar-bg);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+
+  border-radius: 999px;
+  border: 1px solid var(--navbar-border);
+  box-shadow: 0 8px 32px var(--navbar-shadow),
+    inset 0 0 0 1px var(--navbar-inset);
+}
+
+.navbar__group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__divider {
+  width: 1px;
+  height: 24px;
+  background: var(--navbar-divider);
+}
+
+/* Icon buttons */
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  color: inherit;
+  text-decoration: none;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-icon:hover {
+  background: var(--navbar-hover);
+  box-shadow: 0 4px 12px var(--navbar-shadow);
+  transform: translateY(-1px);
+}
+
+.nav-icon.active {
+  background: var(--navbar-active);
+}
+
+.nav-icon svg {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+}
+
+.nav-icon svg,
+.nav-icon svg * {
+  padding: 0;
+}
+
+/* Theme toggle inherits same styling */
+.theme-toggle {
+  padding: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.5rem 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .nav-icon {
+    width: 34px;
+    height: 34px;
+  }
+}
