@@ -152,8 +152,16 @@
     font-size: 1.8rem;
   }
 
+  .project-card-head {
+    flex-wrap: wrap;
+  }
+
   .project-card-name {
     font-size: 1.15rem;
+  }
+
+  .projects-page .project-link {
+    margin-left: auto;
   }
 
   .project-card-foot {
