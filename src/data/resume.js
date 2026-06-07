@@ -50,6 +50,24 @@ export const projects = [
     ],
     github: "https://github.com/dead-shadow-7/OMNIVIEW",
   },
+  {
+    id: 3,
+    name: "Brain Tumor Detection",
+    stack: [
+      "React",
+      "Express.js",
+      "CNN",
+      "Hugging Face",
+      "Gemini API",
+      "Clerk",
+      "MongoDB",
+    ],
+    points: [
+      "Full-stack MERN app that analyzes brain MRI scans to detect and classify tumor type using a custom CNN deployed on Hugging Face.",
+      "Real-time predictions paired with AI-generated tumor summaries via the Gemini API, with Clerk authentication and MongoDB for secure, personalized sessions.",
+    ],
+    github: "https://github.com/dead-shadow-7/brain-tumor-detection",
+  },
 ];
 
 export const skills = [
