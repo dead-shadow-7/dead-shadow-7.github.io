@@ -17,16 +17,17 @@
   --accent: #2563eb;
   --accent-strong: #1d4ed8;
   --accent-soft: rgba(37, 99, 235, 0.1);
-  --border: #e5e7eb;
-  --border-strong: #d1d5db;
+  --avatar-ring: rgba(37, 99, 235, 0.05);
+  --border: #d8dde5;
+  --border-strong: #c3cad6;
   --shadow: rgba(15, 23, 42, 0.08);
-  --navbar-bg: rgba(255, 255, 255, 0.18);
-  --navbar-border: rgba(255, 255, 255, 0.25);
-  --navbar-divider: rgba(0, 0, 0, 0.15);
-  --navbar-shadow: rgba(0, 0, 0, 0.15);
-  --navbar-inset: rgba(255, 255, 255, 0.08);
-  --navbar-hover: rgba(255, 255, 255, 0.22);
-  --navbar-active: rgba(255, 255, 255, 0.35);
+  --navbar-bg: rgba(255, 255, 255, 0.7);
+  --navbar-border: rgba(15, 23, 42, 0.1);
+  --navbar-divider: rgba(0, 0, 0, 0.12);
+  --navbar-shadow: rgba(15, 23, 42, 0.12);
+  --navbar-inset: rgba(255, 255, 255, 0.6);
+  --navbar-hover: rgba(15, 23, 42, 0.06);
+  --navbar-active: rgba(15, 23, 42, 0.1);
 }
 
 /* Dark theme */
@@ -41,6 +42,7 @@
   --accent: #7aa2f7;
   --accent-strong: #a3bffa;
   --accent-soft: rgba(122, 162, 247, 0.12);
+  --avatar-ring: rgba(122, 162, 247, 0.14);
   --border: #20242e;
   --border-strong: #2d323e;
   --shadow: rgba(0, 0, 0, 0.6);

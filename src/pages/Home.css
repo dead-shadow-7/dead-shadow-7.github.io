@@ -49,7 +49,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--border-strong);
-  box-shadow: 0 0 0 5px var(--accent-soft);
+  box-shadow: 0 0 0 4px var(--avatar-ring);
   margin-bottom: 1.6rem;
   display: block;
 }
