@@ -12,11 +12,10 @@ const HeroSection = () => {
       </h1>
       <p className="hero-kicker">// backend &amp; AI/ML developer</p>
       <p className="subheading">
-        21, a CS undergrad who likes understanding{" "}
-        <span className="accent-text">how systems work</span>, not just making
-        them work. I build backends and AI/ML systems — APIs, search engines,
-        and RAG pipelines — and care about the tradeoffs behind real-world
-        software. If you've got something cool to build, let's talk.
+        21, CS undergrad. I build backends and AI/ML systems: APIs, search
+        engines, RAG pipelines. What I actually enjoy is figuring out{" "}
+        <span className="accent-text">how things work underneath</span>. Got
+        something to build? Let's talk.
       </p>
       <div className="contact-buttons">
         <a

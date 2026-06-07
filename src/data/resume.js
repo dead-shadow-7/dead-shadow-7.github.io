@@ -1,5 +1,6 @@
 import UniversityLogo from "../assets/SPPULogo.jpg";
 import EdunetFoundationLogo from "../assets/EdunetFoundationIcon.png";
+import SynconicLogo from "../assets/Synconic.png";
 
 export const experience = [
   {
@@ -12,7 +13,7 @@ export const experience = [
       "Built an occupational-code matching tool (FastAPI + React) with a hybrid RAG retriever (semantic + BM25), returning ranked suggestions in sub-second latency.",
       "Developed document auto-fill pipelines using Gemini 2.5 Flash to extract structured data from PDFs and images, with strict schema enforcement to eliminate hallucinated outputs.",
     ],
-    logo: null,
+    logo: SynconicLogo,
   },
   {
     id: 2,
