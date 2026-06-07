@@ -1,0 +1,82 @@
+/* ── Blog page ───────────────────────────────────────────── */
+.blog-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.blog-page .page-head {
+  margin-bottom: 2.5rem;
+}
+
+.blog-page .page-prompt {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 0.6rem;
+  letter-spacing: 0.02em;
+}
+
+.blog-page .page-prompt .prompt-sign {
+  color: var(--accent);
+  margin-right: 0.15rem;
+}
+
+.blog-page .page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* ── Empty state ─────────────────────────────────────────── */
+.blog-empty {
+  padding: 1.85rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-empty-line {
+  margin: 0;
+}
+
+.blog-comment {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.blog-empty-sub {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0.85rem 0 0;
+  max-width: 32rem;
+}
+
+.blog-back {
+  display: inline-block;
+  margin-top: 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.blog-back .prompt-sign {
+  color: var(--accent);
+  margin-right: 0.3rem;
+}
+
+.blog-back:hover {
+  color: var(--accent);
+}
+
+/* ── Mobile ──────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .blog-page .page-title {
+    font-size: 1.8rem;
+  }
+}
