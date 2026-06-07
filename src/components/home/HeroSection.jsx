@@ -2,30 +2,34 @@ import avatarImage from "../../assets/ProfileImage.png";
 
 const HeroSection = () => {
   return (
-    <>
-      <div className="avatar-container">
-        <img src={avatarImage} alt="Shivam Rajput" className="avatar" />
-      </div>
-      <h1 className="heading">Hi, I am Shivam</h1>
+    <header className="hero reveal">
+      <img src={avatarImage} alt="Shivam Rajput" className="avatar" />
+      <p className="hero-kicker">// backend developer</p>
+      <h1 className="hero-title">Hi, I'm Shivam.</h1>
       <p className="subheading">
-        21, Backend-focused CS graduate who likes understanding how systems
-        work, not just making them work. Interested in APIs, databases,
-        scalability, and the tradeoffs behind real-world software.
-        <br />
-        If you got something cool to work on let's talk
+        21, a backend-focused CS graduate who likes understanding{" "}
+        <span className="accent-text">how systems work</span>, not just making
+        them work. Interested in APIs, databases, scalability, and the tradeoffs
+        behind real-world software. If you've got something cool to build, let's
+        talk.
       </p>
       <div className="contact-buttons">
-        <a href="mailto:shivamrajput.dev@proton.me" className="contact-button">
-          Email Me
+        <a
+          href="mailto:shivamrajput.dev@proton.me"
+          className="contact-button primary"
+        >
+          Email me
         </a>
         <a
           href="https://www.linkedin.com/in/shivamrajput12119/"
-          className="contact-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-button secondary"
         >
-          Let's Connect
+          Let's connect →
         </a>
       </div>
-    </>
+    </header>
   );
 };
 

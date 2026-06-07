@@ -1,15 +1,25 @@
 * {
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Light theme (default) */
 :root {
+  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", ui-monospace,
+    SFMono-Regular, Menlo, monospace;
   --bg-primary: #ffffff;
   --bg-secondary: #f8fafc;
-  --text-primary: #000000;
-  --text-secondary: #242424;
-  --accent: #3b82f6;
+  --surface: #ffffff;
+  --surface-hover: #f4f6fb;
+  --text-primary: #0a0a0a;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+  --accent: #2563eb;
+  --accent-strong: #1d4ed8;
+  --accent-soft: rgba(37, 99, 235, 0.1);
   --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --shadow: rgba(15, 23, 42, 0.08);
   --navbar-bg: rgba(255, 255, 255, 0.18);
   --navbar-border: rgba(255, 255, 255, 0.25);
   --navbar-divider: rgba(0, 0, 0, 0.15);
@@ -22,11 +32,18 @@
 /* Dark theme */
 [data-theme="dark"] {
   --bg-primary: #000000;
-  --bg-secondary: #1e293b;
+  --bg-secondary: #0d1117;
+  --surface: #0f1115;
+  --surface-hover: #161922;
   --text-primary: #ffffff;
-  --text-secondary: #dfdfdf;
-  --accent: #60a5fa;
-  --border: #334155;
+  --text-secondary: #b6bcc7;
+  --text-muted: #6b7280;
+  --accent: #7aa2f7;
+  --accent-strong: #a3bffa;
+  --accent-soft: rgba(122, 162, 247, 0.12);
+  --border: #20242e;
+  --border-strong: #2d323e;
+  --shadow: rgba(0, 0, 0, 0.6);
   --navbar-bg: rgba(30, 41, 59, 0.4);
   --navbar-border: rgba(148, 163, 184, 0.3);
   --navbar-divider: rgba(148, 163, 184, 0.4);
@@ -36,9 +53,17 @@
   --navbar-active: rgba(148, 163, 184, 0.3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
@@ -48,4 +73,20 @@ body {
   max-width: 680px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+/* ── Shared entrance animation ───────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: reveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  @keyframes reveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

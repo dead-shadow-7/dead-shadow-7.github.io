@@ -6,6 +6,8 @@ export const experience = [
     company: "Edunet Foundation",
     role: "Web Developer Intern",
     duration: "Dec 2024 - Jan 2025",
+    description:
+      "Built and shipped responsive web interfaces while collaborating on a team project end to end.",
     logo: EdunetFoundationLogo,
   },
 ];

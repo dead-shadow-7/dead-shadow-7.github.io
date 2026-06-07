@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <span className="footer-left">
-          Design and Created by{" "}
+          designed &amp; built by{" "}
           <a
             href="https://github.com/dead-shadow-7"
             target="_blank"

@@ -10,10 +10,13 @@ const Home = () => {
     <div className="home-page">
       <HeroSection />
       <ExperienceSection />
-      <div className="skills-section">
-        <h1 className="heading">Skills</h1>
+      <section className="skills-section reveal">
+        <div className="section-header">
+          <span className="section-index">02</span>
+          <h2 className="section-title">Skills</h2>
+        </div>
         <SkillTags />
-      </div>
+      </section>
       <EducationSection />
       <Footer />
     </div>
