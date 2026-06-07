@@ -5,6 +5,14 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Apply theme before paint to avoid a flash (defaults to dark) -->
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+
     <title>Shivam Rajput — Backend Developer</title>
     <meta
       name="description"
@@ -30,7 +38,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/index-2REUlx15.js"></script>
+    <script type="module" crossorigin src="/assets/index-DCo1K0oX.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Nc7-Pqvm.css">
   </head>
   <body>
