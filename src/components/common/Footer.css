@@ -16,6 +16,11 @@
   letter-spacing: 0.01em;
 }
 
+.footer-left .prompt-sign {
+  color: var(--accent);
+  margin-right: 0.15rem;
+}
+
 .footer-link {
   color: var(--accent);
   text-decoration: none;

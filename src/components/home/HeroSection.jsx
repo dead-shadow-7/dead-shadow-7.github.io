@@ -4,8 +4,13 @@ const HeroSection = () => {
   return (
     <header className="hero reveal">
       <img src={avatarImage} alt="Shivam Rajput" className="avatar" />
+      <p className="hero-prompt">
+        <span className="prompt-sign">$</span> whoami
+      </p>
+      <h1 className="hero-title">
+        Hi, I'm Shivam.<span className="cursor" aria-hidden="true" />
+      </h1>
       <p className="hero-kicker">// backend developer</p>
-      <h1 className="hero-title">Hi, I'm Shivam.</h1>
       <p className="subheading">
         21, a backend-focused CS graduate who likes understanding{" "}
         <span className="accent-text">how systems work</span>, not just making
