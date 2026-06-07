@@ -171,28 +171,27 @@
 
 /* ── Sections ────────────────────────────────────────────── */
 .experience-section,
+.projects-section,
 .skills-section,
+.certifications-section,
 .education-section {
   margin-bottom: 5rem;
 }
 
-/* ── Experience / Education rows (hairline list) ─────────── */
-.experience-item,
-.education-item {
+/* ── Shared entry rows (Experience / Education) ──────────── */
+.entry {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  padding: 1.1rem 0;
+  padding: 1.25rem 0;
   border-top: 1px solid var(--border);
 }
 
-.experience-item:last-child,
-.education-item:last-child {
+.entry:last-child {
   border-bottom: 1px solid var(--border);
 }
 
-.company-logo,
-.university-logo {
+.entry-logo {
   width: 42px;
   height: 42px;
   object-fit: contain;
@@ -202,54 +201,158 @@
   border: 1px solid var(--border);
 }
 
-.experience-content,
-.education-content {
+.entry-logo--fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.entry-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
   gap: 1rem;
 }
 
-.experience-details,
-.education-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.company-name,
-.college-name {
+.entry-title {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
 
-.role-title,
-.university-degree {
+.entry-subtitle {
   font-size: 0.9rem;
   color: var(--text-secondary);
-  margin: 0;
+  margin: 0.1rem 0 0;
 }
 
-.item-description {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  margin: 0.4rem 0 0;
-  line-height: 1.6;
-  max-width: 30rem;
-}
-
-.duration {
+.entry-meta {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   white-space: nowrap;
   color: var(--text-muted);
   flex-shrink: 0;
-  padding-top: 0.15rem;
+  padding-top: 0.2rem;
 }
 
-/* ── Skills (minimal mono chips) ─────────────────────────── */
+.entry-points {
+  margin: 0.75rem 0 0;
+  padding-left: 1.05rem;
+  list-style: none;
+}
+
+.entry-points li {
+  position: relative;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 0.4rem;
+}
+
+.entry-points li::before {
+  content: "▹";
+  position: absolute;
+  left: -1.05rem;
+  color: var(--accent);
+}
+
+/* ── Projects ────────────────────────────────────────────── */
+.project {
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.project:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  flex-shrink: 0;
+  transition:
+    color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.project-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.project-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.stack-chip {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border-radius: 5px;
+  padding: 0.22rem 0.5rem;
+}
+
+/* ── Skills (categorized) ────────────────────────────────── */
+.skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skill-group {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.skill-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding-top: 0.3rem;
+}
+
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
@@ -276,6 +379,62 @@
   border-color: var(--accent);
 }
 
+/* ── Certifications (sequential hairline list) ───────────── */
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.15rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.cert-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.cert-icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  padding-top: 0.15rem;
+}
+
+.cert-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.cert-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cert-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cert-name {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.cert-issuer {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0.3rem 0 0;
+}
+
+.cert-issuer::before {
+  content: "↳ ";
+  color: var(--accent);
+}
+
 /* ── Mobile ──────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .hero {
@@ -291,18 +450,28 @@
   }
 
   .experience-section,
+  .projects-section,
   .skills-section,
+  .certifications-section,
   .education-section {
     margin-bottom: 3.5rem;
   }
 
-  .experience-content,
-  .education-content {
+  .entry-head {
     flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .entry-meta {
+    padding-top: 0;
+  }
+
+  .skill-group {
+    grid-template-columns: 1fr;
     gap: 0.5rem;
   }
 
-  .duration {
+  .skill-group-label {
     padding-top: 0;
   }
 }

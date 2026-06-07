@@ -2,27 +2,29 @@ import { education } from "../../data/resume";
 
 const EducationSection = () => {
   return (
-    <section className="education-section reveal">
+    <section id="education" className="education-section reveal">
       <div className="section-header">
-        <span className="section-index">03</span>
+        <span className="section-index">05</span>
         <h2 className="section-title">Education</h2>
       </div>
       {education.map((item) => (
-        <div key={item.id} className="education-item">
+        <div key={item.id} className="entry">
           <img
             src={item.logo}
             alt={item.institution}
-            className="university-logo"
+            className="entry-logo"
           />
-          <div className="education-content">
-            <div className="education-details">
-              <h3 className="college-name">{item.institution}</h3>
-              <p className="university-degree">{item.degree}</p>
-              {item.description && (
-                <p className="item-description">{item.description}</p>
-              )}
+          <div className="entry-body">
+            <div className="entry-head">
+              <div>
+                <h3 className="entry-title">{item.institution}</h3>
+                <p className="entry-subtitle">
+                  {item.degree}
+                  {item.location ? ` · ${item.location}` : ""}
+                </p>
+              </div>
+              <span className="entry-meta">{item.duration}</span>
             </div>
-            <div className="duration">{item.duration}</div>
           </div>
         </div>
       ))}

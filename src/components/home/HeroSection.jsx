@@ -10,13 +10,13 @@ const HeroSection = () => {
       <h1 className="hero-title">
         Hi, I'm Shivam.<span className="cursor" aria-hidden="true" />
       </h1>
-      <p className="hero-kicker">// backend developer</p>
+      <p className="hero-kicker">// backend &amp; AI/ML developer</p>
       <p className="subheading">
-        21, a backend-focused CS graduate who likes understanding{" "}
+        21, a CS undergrad who likes understanding{" "}
         <span className="accent-text">how systems work</span>, not just making
-        them work. Interested in APIs, databases, scalability, and the tradeoffs
-        behind real-world software. If you've got something cool to build, let's
-        talk.
+        them work. I build backends and AI/ML systems — APIs, search engines,
+        and RAG pipelines — and care about the tradeoffs behind real-world
+        software. If you've got something cool to build, let's talk.
       </p>
       <div className="contact-buttons">
         <a
