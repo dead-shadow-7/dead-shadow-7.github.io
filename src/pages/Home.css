@@ -40,16 +40,17 @@
 
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
-  padding-top: 5rem;
+  padding-top: 2.75rem;
 }
 
 .avatar {
-  width: 76px;
-  height: 76px;
+  width: 104px;
+  height: 104px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--border-strong);
-  margin-bottom: 1.5rem;
+  border: 2px solid var(--border-strong);
+  box-shadow: 0 0 0 5px var(--accent-soft);
+  margin-bottom: 1.6rem;
   display: block;
 }
 
@@ -438,7 +439,7 @@
 /* ── Mobile ──────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .hero {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   .hero-title {
