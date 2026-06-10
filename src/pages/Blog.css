@@ -18,7 +18,7 @@
 }
 
 .blog-page .page-prompt .prompt-sign {
-  color: var(--accent);
+  color: var(--syntax);
   margin-right: 0.15rem;
 }
 
@@ -44,7 +44,7 @@
 .blog-comment {
   font-family: var(--font-mono);
   font-size: 0.95rem;
-  color: var(--accent);
+  color: var(--syntax);
 }
 
 .blog-empty-sub {
@@ -66,7 +66,7 @@
 }
 
 .blog-back .prompt-sign {
-  color: var(--accent);
+  color: var(--syntax);
   margin-right: 0.3rem;
 }
 

@@ -61,7 +61,7 @@
 }
 
 .term-prompt {
-  color: var(--accent);
+  color: var(--syntax);
   margin-right: 0.5rem;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .term-arrow {
-  color: var(--accent);
+  color: var(--syntax);
 }
 
 .term-link {
@@ -114,7 +114,7 @@
   width: 0.55ch;
   height: 0.95em;
   vertical-align: -0.08em;
-  background: var(--accent);
+  background: var(--syntax);
   animation: term-blink 1.1s steps(1) infinite;
 }
 

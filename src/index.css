@@ -17,6 +17,9 @@
   --accent: #2563eb;
   --accent-strong: #1d4ed8;
   --accent-soft: rgba(37, 99, 235, 0.1);
+  /* Non-interactive terminal/syntax decoration — never used on links */
+  --syntax: #047857;
+  --syntax-soft: rgba(4, 120, 87, 0.1);
   --avatar-ring: rgba(37, 99, 235, 0.05);
   --border: #d8dde5;
   --border-strong: #c3cad6;
@@ -42,6 +45,8 @@
   --accent: #7aa2f7;
   --accent-strong: #a3bffa;
   --accent-soft: rgba(122, 162, 247, 0.12);
+  --syntax: #9ece6a;
+  --syntax-soft: rgba(158, 206, 106, 0.12);
   --avatar-ring: rgba(122, 162, 247, 0.14);
   --border: #20242e;
   --border-strong: #2d323e;

@@ -19,7 +19,7 @@
 }
 
 .page-prompt .prompt-sign {
-  color: var(--accent);
+  color: var(--syntax);
   margin-right: 0.15rem;
 }
 
@@ -59,7 +59,7 @@
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--syntax);
   flex-shrink: 0;
 }
 
@@ -91,7 +91,7 @@
   content: "▹";
   position: absolute;
   left: -1.05rem;
-  color: var(--accent);
+  color: var(--syntax);
 }
 
 /* ── Footer row (stack + link) ───────────────────────────── */
