@@ -82,6 +82,16 @@ body {
   padding: 0 1.5rem;
 }
 
+.site-main {
+  padding-top: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .site-main {
+    padding-top: 1.25rem;
+  }
+}
+
 /* ── Shared entrance animation ───────────────────────────── */
 @media (prefers-reduced-motion: no-preference) {
   .reveal {

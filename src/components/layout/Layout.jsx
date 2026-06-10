@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <main style={{ paddingTop: "2.5rem" }}>
+      <main className="site-main">
         <Outlet />
       </main>
     </>

@@ -7,10 +7,11 @@ const HeroSection = () => {
       <p className="hero-prompt">
         <span className="prompt-sign">$</span> whoami
       </p>
-      <h1 className="hero-title">
-        Hi, I'm Shivam.<span className="cursor" aria-hidden="true" />
-      </h1>
-      <p className="hero-kicker">// backend &amp; AI/ML developer</p>
+      <h1 className="hero-title">Hi, I'm Shivam.</h1>
+      <p className="hero-kicker">
+        // backend &amp; AI/ML developer
+        <span className="cursor" aria-hidden="true" />
+      </p>
       <p className="subheading">
         21, CS undergrad. I build backends and AI/ML systems: APIs, search
         engines, RAG pipelines. What I actually enjoy is figuring out{" "}

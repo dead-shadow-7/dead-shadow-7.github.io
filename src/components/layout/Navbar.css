@@ -94,7 +94,7 @@
 @media (max-width: 600px) {
   .navbar {
     max-width: calc(100vw - 1.5rem);
-    padding: 0.5rem 0.65rem;
+    padding: 0.7rem 0.65rem;
     gap: 0.5rem;
   }
 
@@ -104,19 +104,14 @@
   }
 }
 
-/* Small phones — keep the pill from overflowing the viewport */
+/* Small phones — tighten gaps, not icon size, so tap targets stay 34px */
 @media (max-width: 360px) {
   .navbar {
-    padding: 0.4rem 0.55rem;
+    padding: 0.6rem 0.55rem;
     gap: 0.4rem;
   }
 
   .navbar__group {
     gap: 0.25rem;
-  }
-
-  .nav-icon {
-    width: 30px;
-    height: 30px;
   }
 }
