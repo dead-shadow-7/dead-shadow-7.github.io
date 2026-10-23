@@ -68,6 +68,25 @@ export const projects = [
     ],
     github: "https://github.com/dead-shadow-7/brain-tumor-detection",
   },
+  {
+    id: 4,
+    name: "Marginalia — Research RAG",
+    stack: [
+      "Python",
+      "React",
+      "FastAPI",
+      "LangChain",
+      "Pinecone",
+      "PostgreSQL",
+      "Redis",
+      "Supabase",
+    ],
+    points: [
+      "Built a multi-tenant RAG document assistant with asynchronous ingestion for PDF, DOCX, XLSX, Markdown, and URLs, delivering streamed SSE answers with source citations.",
+      "Hardened tenant isolation, citation validation, JWT authentication, and SSRF protection; optimized embeddings and ingestion to cut 60-page PDF processing from ~6 minutes to 3.8 seconds, with memory usage of 206 MB.",
+    ],
+    github: "https://github.com/dead-shadow-7/Research-RAG",
+  },
 ];
 
 export const skills = [
